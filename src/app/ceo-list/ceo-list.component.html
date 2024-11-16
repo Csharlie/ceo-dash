@@ -1,1 +1,8 @@
 <p>ceo-list works!</p>
+<div *ngFor="let ceo of ceos" class="ceo-card">
+    <img [src]="ceo.profilePicture" alt="{{ ceo.name }}" class="ceo-image" />
+    <h2>{{ ceo.name }}</h2>
+    <p>Company: {{ ceo.company }}</p>
+    <p>Financials: {{ ceo.financials }}</p>
+</div>
+  
