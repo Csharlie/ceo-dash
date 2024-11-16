@@ -10,7 +10,7 @@ export class CeoService {
       name: 'Elon Musk',
       company: 'Tesla, SpaceX',
       financials: '$1.2 trillion',
-      profilePicture: 'https://hu.wikipedia.org/wiki/Elon_Musk#/media/F%C3%A1jl:Elon_Musk_Colorado_2022_(cropped2).jpg'
+      profilePicture: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg'
     },
     {
       name: 'Tim Cook',
