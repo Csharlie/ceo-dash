@@ -1,7 +1,7 @@
 .ceo-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: left;
     gap: 16px;
   }
   
