@@ -229,10 +229,12 @@
       <p>Congratulations! Your app is running. 🎉</p>
       <div class="ceo-list">
         <div *ngFor="let ceo of ceos" class="ceo-card">
-          <img [src]="ceo.profilePicture" alt="{{ ceo.name }}" class="ceo-image" />
+          <img [src]="ceo.profilePicture" alt="{{ ceo.name }}" class="ceo-profile" />
           <h2>{{ ceo.name }}</h2>
-          <p>Company: {{ ceo.company }}</p>
-          <p>Financials: {{ ceo.financials }}</p>
+          <p><strong>Company:</strong> {{ ceo.company }}</p>
+          <img [src]="ceo.companyLogo" alt="{{ ceo.company }} logo" class="company-logo" />
+          <p><strong>Financials:</strong> {{ ceo.financials }}</p>
+          <p><strong>Country:</strong> {{ ceo.country }}</p>
         </div>
       </div>      
     </div>
