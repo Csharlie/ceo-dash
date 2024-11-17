@@ -177,7 +177,7 @@
   }
 </style>
 
-<main class="main">
+<main class="main container">
   <div class="content">
     <div class="left-side">
       <svg
@@ -227,14 +227,20 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
-      <div class="ceo-list">
-        <div *ngFor="let ceo of ceos" class="ceo-card">
-          <img [src]="ceo.profilePicture" alt="{{ ceo.name }}" class="ceo-profile" />
-          <h2>{{ ceo.name }}</h2>
-          <p><strong>Company:</strong> {{ ceo.company }}</p>
-          <img [src]="ceo.companyLogo" alt="{{ ceo.company }} logo" class="company-logo" />
-          <p><strong>Financials:</strong> {{ ceo.financials }}</p>
-          <p><strong>Country:</strong> {{ ceo.country }}</p>
+      <div class="container mt-4">
+        <div class="row">
+          <div *ngFor="let ceo of ceos" class="col-md-4">
+            <div class="card">
+              <img [src]="ceo.profilePicture" alt="{{ ceo.name }}" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">{{ ceo.name }}</h5>
+                <p class="card-text"><strong>Company:</strong> {{ ceo.company }}</p>
+                <img [src]="ceo.companyLogo" alt="{{ ceo.company }} logo" class="company-logo" />
+                <p class="card-text"><strong>Financials:</strong> {{ ceo.financials }}</p>
+                <p class="card-text"><strong>Country:</strong> {{ ceo.country }}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>      
     </div>
